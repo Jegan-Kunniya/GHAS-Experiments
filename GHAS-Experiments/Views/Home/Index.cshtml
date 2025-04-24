@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to GHAS-Experiments</h1>
+        <p>This is the home page of the GHAS-Experiments application.</p>
+        
+        @model GhasExperiments.Models.SampleModel
+
+        <div>
+            <h2>Sample Data</h2>
+            <p>@Model.Name</p>
+        </div>
+    </div>
+</body>
+</html>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Welcome to the Home Page</h1>
+<p>This is a placeholder view for the Index action.</p>
